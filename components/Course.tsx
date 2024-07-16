@@ -16,7 +16,7 @@ const InstructorCard = ({
 }: InstructorProps) => {
   return (
     <div
-      className={`h-full w-full min-w-[1000px] max-w-[1100px] bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}
+      className={`h-full w-full min-w-[1000px] max-w-[1100px] bg-cover bg-no-repeat lg:rounded-3xl 2xl:rounded-5xl`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: 'center',
