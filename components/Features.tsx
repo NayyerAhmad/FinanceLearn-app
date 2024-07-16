@@ -4,61 +4,46 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
-      <div className="max-container padding-container relative w-full justify-end flex">
-        <div className="flex flex-1 lg:min-h-[900px]">
-          <Image
-            src="/phone.png"
-            alt="phone"
-            width={440}
-            height={1000}
-            className="feature-phone"
-          />
+    <section className="flex flex-col items-center justify-center py-24 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Discover Our Features
+          </h2>
+          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+            Explore what makes our financial literacy platform unique.
+          </p>
         </div>
-        <div className="z-20 flex w-full flex-col lg:w-[60%]">
-          <div className="relative">
-            <Image
-              src="/camp.svg"
-              alt="camp"
-              width={50}
-              height={50}
-              className="absolute left-[-5px] top-[-28px] w-10 lg:w-[50px]"
+        <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+          {FEATURES.map((feature, index) => (
+            <FeatureItem
+              key={index}
+              title={feature.title}
+              icon={feature.icon}
+              description={feature.description}
             />
-            <h2 className="bold-40 lg:bold-64">Our Features</h2>
-          </div>
-          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mt-20 lg:gap-20">
-            {FEATURES.map((feature) => (
-              <FeatureItem
-                title={feature.title}
-                key={feature.title}
-                icon={feature.icon}
-                description={feature.description}
-              />
-            ))}
-          </ul>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-type FeatureItem = {
+type FeatureItemProps = {
   title: string;
   icon: string;
   description: string;
 };
 
-const FeatureItem = ({ title, icon, description }: FeatureItem) => {
+const FeatureItem = ({ title, icon, description }: FeatureItemProps) => {
   return (
-    <li className="flex w-full flex-1 flex-col items-start">
-      <div className="rounded-full p-4 lg:p-7 bg-green-50">
-        <Image src={icon} alt="map" width={28} height={28} />
+    <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+      <div className="rounded-full p-3 bg-green-200 mb-4">
+        <Image src={icon} alt={title} width={48} height={48} />
       </div>
-      <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
-      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
-        {description}
-      </p>
-    </li>
+      <h3 className="text-xl font-medium text-gray-900 mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
+    </div>
   );
 };
 
