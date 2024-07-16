@@ -1,14 +1,22 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Pricing " },
+  { href: "/", key: "courses", label: "Courses" },
+  { href: "/", key: "resources", label: "Resources" },
+  { href: "/", key: "pricing", label: "Pricing" },
   { href: "/", key: "contact_us", label: "Contact Us" },
 ];
 
-// CAMP SECTION
-export const PEOPLE_URL = [
+// HERO SECTION (added for better context)
+export const HERO_COURSE = {
+  title: "Master Your Finances",
+  description: "Join our flagship course and take control of your financial future. Learn budgeting, saving, investing, and more from industry experts.",
+  image: "/hero-course.jpg",
+  link: "/courses/flagship",
+};
+
+// INSTRUCTOR_SECTION
+export const INSTRUCTOR_IMAGES = [
   "/person-1.png",
   "/person-2.png",
   "/person-3.png",
@@ -18,32 +26,28 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: "Real maps can be offline",
-    icon: "/map.svg",
-    variant: "green",
-    description:
-      "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+    title: "Comprehensive Curriculum",
+    icon: "/curriculum.svg",
+    variant: "blue",
+    description: "Our courses cover all aspects of personal finance, from budgeting and saving to investing and retirement planning.",
   },
   {
-    title: "Set an adventure schedule",
-    icon: "/calendar.svg",
-    variant: "green",
-    description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+    title: "Expert Instructors",
+    icon: "/instructors.svg",
+    variant: "blue",
+    description: "Learn from certified financial planners, investment advisors, and experienced professionals in the finance industry.",
   },
   {
-    title: "Technology using augment reality",
-    icon: "/tech.svg",
-    variant: "green",
-    description:
-      "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+    title: "Interactive Learning",
+    icon: "/interactive.svg",
+    variant: "blue",
+    description: "Engage with interactive lessons, quizzes, and real-world simulations to reinforce your understanding.",
   },
   {
-    title: "Many new locations every month",
-    icon: "/location.svg",
-    variant: "orange",
-    description:
-      "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
+    title: "Flexible Scheduling",
+    icon: "/schedule.svg",
+    variant: "purple",
+    description: "Access course materials anytime, anywhere, and learn at your own pace with our flexible online platform.",
   },
 ];
 
@@ -52,35 +56,35 @@ export const FOOTER_LINKS = [
   {
     title: "Learn More",
     links: [
-      "About Hilink",
+      "About Us",
       "Press Releases",
-      "Environment",
-      "Jobs",
+      "Blog",
+      "Careers",
       "Privacy Policy",
       "Contact Us",
     ],
   },
   {
-    title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+    title: "Resources",
+    links: ["Personal Finance Guide", "Investment Tips", "Savings Strategies"],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
+    { label: "Support", value: "support@financelearn.com" },
+    { label: "General Inquiries", value: "info@financelearn.com" },
   ],
 };
 
 export const SOCIALS = {
-  title: "Social",
+  title: "Follow Us",
   links: [
     "/facebook.svg",
     "/instagram.svg",
     "/twitter.svg",
+    "/linkedin.svg",
     "/youtube.svg",
-    "/wordpress.svg",
   ],
 };

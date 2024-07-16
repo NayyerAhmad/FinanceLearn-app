@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Travel",
-  description: "Travel UI/UX for camping",
+  title: "FinanceLearn - Master Your Financial Future",
+  description: "Explore FinanceLearn for expert courses on budgeting, investing, and personal finance. Start mastering your financial future today!",
 };
 
 export default function RootLayout({
