@@ -26,7 +26,7 @@ const Resources = () => {
           height={580}
           className="w-full h-[40rem] object-cover object-center 2xl:rounded-5xl"
         />
-        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[6%] lg:top-40">
+        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[70%] lg:top-40">
           <Image
             src="/calendar.svg"
             alt="Calendar"
