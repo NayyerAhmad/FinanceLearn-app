@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "FinanceLearn - Master Your Financial Future",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+        <SpeedInsights/>
         <main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>
